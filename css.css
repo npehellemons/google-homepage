@@ -1,0 +1,130 @@
+/* GENERAL EFFECTS */
+
+body {
+    font-family: arial, sans-serif;
+    background-color: white;
+}
+
+/* NAV BAR EFFECTS */
+
+.nav-flex-container{
+    display: flex;
+    flex-direction: space-between;
+
+    padding: 10px;
+    
+    position: fixed; /* to position at the top */
+    width: 100%;
+    left: 0px;
+    top: 0px;
+
+    border: 2px solid red; /*TO DELETE */
+
+}
+
+        .nav-flex-container a {/* we cannot apply this to li, must apply seperately to <a> nature are links */
+        color: inherit;
+        text-decoration: none;
+
+}
+
+.nav-flex-child-1 {
+    flex-grow: 1;
+
+    display: flex; /* to align our text to the middle */
+    align-items: center;
+
+    border: 2px solid blue; /*TO DELETE */
+}
+
+.nav-flex-child-2 {
+    flex-grow: 1;
+    
+    padding-right: 15px; /* spacing from the edge */
+
+    border: 2px solid blue; /*TO DELETE */
+}
+
+/* NAV BAR LINKS */
+
+.nav-bar-left {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+    text-align: left;
+
+}
+
+.nav-bar-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    text-align: right;
+}
+
+.nav-flex-container li {
+    display: inline-block;
+
+    padding: 5px;
+    margin: 0 5px;
+
+    color: rgba(0,0,0,0.87);
+    font-size: 14px;
+
+}
+
+        .nav-flex-container li:hover { /* all li elements within our nav flex container */
+            text-decoration: underline;
+        }
+
+/* GRID BOX CONTAINER */
+
+.grid-box-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: 2fr 1fr 1fr 1fr;
+
+    gap: 20px; /* spacing between rows */
+
+    margin: auto; /* centers our google container */
+    margin-top: 150px; /* adds spacing from nav bar */
+    width: 700px; /* master width - determines all elements within */
+
+    padding: 10px;
+
+    border: 2px solid greenyellow;
+
+    }
+
+    .grid-first-row {
+        grid-column: 1 / 5;
+        grid-row: 1;
+
+    }
+    .grid-second-row-search-icon {
+        grid-column: 1;
+        grid-row: 2;
+
+        z-index: 2; /* Need otherwise search bar will cover icon */
+
+    }
+    .grid-second-row {
+        grid-column: 1 / 5;
+        grid-row: 2;
+
+    }
+    .grid-third-row-firstbutton {
+        grid-column: 2 / 3;
+        grid-row: 3;
+    }
+    .grid-third-row-secondbutton {
+        grid-column: 3 / 4;
+        grid-row: 3;
+    }
+    .grid-fourth-row {
+        grid-column: 2 / 4;
+        grid-row: 4;
+    }
+    

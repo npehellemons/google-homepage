@@ -1,30 +1,86 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--. THE HEAD-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Odin Project - Google Homepage">
+  <meta name="keywords" content="The Odin Project, Google Homepage, Nicky Hellemons">
+  <meta name="author" content="Nicky Hellemons">
 
-  <title>A Basic HTML5 Template</title>
-  <meta name="description" content="A simple HTML5 Template for new projects.">
-  <meta name="author" content="SitePoint">
+  <title>The Odin Project - Google Homepage (Nicky Hellemons)></title>
+  
+  <!-- MEDIA SHARE METATAGS -->
+  <meta property='og-title' content='The Odin Project - Google Homepage (Nicky Hellemons)'/>
+  <meta property='og:description' content='Google Homepage by Nicky Hellemons'/>
+  <meta property='og:url' content='https://github.com/npehellemons/google-homepage'/>
+  <meta property='og:type' content='website'/>
 
-  <meta property="og:title" content="A Basic HTML5 Template">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
-  <meta property="og:description" content="A simple HTML5 Template for new projects.">
-  <meta property="og:image" content="image.png">
-
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <!--IMPORTANT - need to ref out our CSS-->
+  <link href='css.css' rel="stylesheet">
 
 </head>
+<body>
+    <!--. THE BODY-->
+    <header>
+<!-- Nav Bar -->
+<div class="nav-flex-container">
+  
+    <div class="nav-flex-child-1">
+      <ul class='nav-bar-left'>
+        <li> <a href=""> Gmail </a></li>
+        <li> <a href=""> Images </a></li>
+    </ul>
+</div>
+    <div class="nav-flex-child-2">
+      <ul class='nav-bar-right'>
+        <li> <a href=""> <img class'square-icon' src='https://i.imgur.com/Mei8TIy.png' alt='square icon'> </a></li>
+        <li> <a href=""> <img class'profile-icon' src='https://i.imgur.com/55q1erZ.png' alt='profile icon'> </a></li>
+    </ul>
+</div>
 
-<body style="background-color: rgb(255, 255, 255);">
+    </header>
 
-  <script src="js/scripts.js"></script>
+    <main>
+        <div class="grid-box-container">
+
+          <!-- 1st row - Google logo-->
+          <div class="grid-first-row">
+            <img class="google-logo" src="https://i.imgur.com/Uf6Vweu.png" alt="google logo picture">
+          
+          </div>
+          
+          <!-- 2nd row - search icon-->
+          <div class="grid-second-row-search-icon">
+            <img class="search-icon" src="https://i.imgur.com/NOMDLEi.png" alt="search logo">
+
+          </div>
+
+            <!-- 2nd row - search bar input -->
+            <div class="grid-second-row">
+              <input class="search-bar" id="search-bar" type="text" autofocus> 
+              </input> <!-- autofucus is to load blinker in search bar-->
+            
+          </div>
+            <!-- 3rd row - first button -->
+          <div class="grid-third-row-firstbutton">
+            <input class="first-button" type="submit" value="Google Search">
+          </div>
+           <!-- 3rd row - second button -->
+           <div class="grid-third-row-secondbutton">
+            <input class="second-button" type="submit" value="I'm Feeling Lucky">
+          </div>
+        
+           <!-- 4th row - offered in sentence -->
+           <div class="grid-fourth-row">
+            Google offered in <a class="language-link" href=""> Francais</a>
+          </div>
+
+
+        </div> <!-- CLOSE - grid-box-container -->
+    </main>
 </body>
+<footer>
+  <!--. THE FOOTER-->
+</footer>
 </html>
