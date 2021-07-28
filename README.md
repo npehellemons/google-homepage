@@ -1,1 +1,0 @@
-This is a test README during the odin project. 
